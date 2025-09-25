@@ -12,7 +12,7 @@ const apiClient = axios.create({
 //'http://localhost:8080/'
 
 export default {
-  getEvents(perPage: Number, page: Number) {
+  getEvents(perPage: number, page: number) {
     return apiClient.get('/events?_limit=' + perPage + '&_page=' + page)
   },
   getEvent(id: number) {
