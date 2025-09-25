@@ -37,7 +37,14 @@ const { message } = storeToRefs(store)
 >
   New Event
 </RouterLink>
-
+|
+<RouterLink
+  class="font-bold text-gray-700"
+  exact-active-class="text-green-500"
+  :to="{ name: 'add-organization' }"
+>
+  New Organization
+</RouterLink>
         </nav>
       </div>
     </header>

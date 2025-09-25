@@ -9,8 +9,13 @@ export interface Event {
   petsAllowed: boolean
   organizer: string
 }
-
-
+export interface Organization  {
+  id: number | null
+  name: string
+  address: string
+  email: string
+  phone: number 
+}
 export interface MessageState {
   message: string
 }

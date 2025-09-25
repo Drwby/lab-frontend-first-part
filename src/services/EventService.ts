@@ -1,5 +1,5 @@
 import axios from 'axios'
-import type { Event } from '@/types'
+import type { Event,Organization } from '@/types'
 
 const apiClient = axios.create({
   baseURL: import.meta.env.VITE_BACKEND_URL,
@@ -20,5 +20,9 @@ export default {
   },
   saveEvent(event: Event) {
     return apiClient.post('/events', event)
+  },
+  // Organization endpoints
+  saveOrganization(org: Organization) {
+    return apiClient.post('/organizations', org)
   },
 }
